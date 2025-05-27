@@ -1,6 +1,16 @@
+import { useAuth } from "../contexts/AuthContext"
+
 function Home(){
+    const {isLoggedIn, user} = useAuth();
+
     return(
-        <h2>Home</h2>
+        <div>
+            <h1>Home</h1>
+            
+            {isLoggedIn && (
+                <p>{user?.role}</p>
+            )}
+        </div>
     )
 }
 

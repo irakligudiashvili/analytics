@@ -33,7 +33,7 @@ function Register(){
                 </div>
 
                 <small className='credentials'>Invalid credentials</small>
-                <button type='submit'>Log In</button>
+                <button type='submit'>Register</button>
             </form>
         </main>
     )
