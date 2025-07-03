@@ -11,6 +11,12 @@ function Navbar(){
                 <li className="left">
                     <Link to="/">Home</Link>
                 </li>
+                <li className="left">
+                    <Link to='/dashboard'>Dashboard</Link>
+                </li>
+                <li className="left">
+                    <Link to='/admin'>Admin</Link>
+                </li>
                 {isLoggedIn ? (
                     <li className="right">
                         <Link to="/" onClick={logout}>Logout</Link>
